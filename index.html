@@ -5,67 +5,126 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Bitcoin Beratung & Hilfe</title>
 <style>
+  /* Grundlegendes Reset */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   body {
     background-color: #0f172a;
     color: #f1f5f9;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
   }
+
   h1 {
     color: #f7931a;
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
   }
+
   h2 {
     color: #f7931a;
     margin-top: 2rem;
     font-size: 1.6rem;
+    max-width: 600px;
+    text-align: left;
+    width: 100%;
   }
+
   ul {
     list-style: none;
     padding-left: 0;
     font-size: 1.1rem;
     line-height: 1.5;
+    max-width: 600px;
+    width: 100%;
   }
+
   ul li {
     margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
   }
+
+  ul li::before {
+    content: "•";
+    color: #f7931a;
+    position: absolute;
+    left: 0;
+  }
+
   form {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
   }
+
   input, textarea {
-    padding: 0.7rem;
+    padding: 0.8rem;
     font-size: 1rem;
     border-radius: 5px;
     border: none;
+    outline: none;
   }
+
+  input:focus, textarea:focus {
+    outline: 2px solid #f7931a;
+  }
+
   button {
     background-color: #f7931a;
     border: none;
-    padding: 0.9rem;
-    font-size: 1.1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 5px;
     color: #0f172a;
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
+
   button:hover {
     background-color: #e67e22;
   }
+
   footer {
-    margin-top: 3rem;
+    margin-top: auto;
+    padding-top: 2rem;
     text-align: center;
     color: #94a3b8;
     font-size: 0.9rem;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  @media (max-width: 650px) {
+    body {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
   }
 </style>
 </head>
@@ -74,20 +133,20 @@
 
   <h2>Was ich für dich tue</h2>
   <ul>
-      <li>🧠 Bitcoin verstehen: Grundlagen & Technik</li>
-      <li>🔐 Selbstverwahrung sicher umsetzen</li>
-      <li>📱 Wallet-Auswahl & Einrichtung</li>
-      <li>📝 Seed Phrase & Backup richtig handhaben</li>
-      <li>⚠️ Fehler vermeiden, Risiken erkennen</li>
-      <li>🧾 Technische Fragen zu Transaktionen, Adressen, Fees usw.</li>
-      <li>🔒 Praktische Tipps für langfristige Sicherheit</li>
-    </ul>
-
-  <h2>Seit 2019</h2>
-  <ul>
-    <li>📘 Fundiertes Wissen</li>
-    <li>🤝 Gerne helfe ich weiter</li>
+    <li>🧠 Bitcoin verstehen: Grundlagen & Technik</li>
+    <li>🔐 Selbstverwahrung sicher umsetzen</li>
+    <li>📱 Wallet-Auswahl & Einrichtung</li>
+    <li>📝 Seed Phrase & Backup richtig handhaben</li>
+    <li>⚠️ Fehler vermeiden, Risiken erkennen</li>
+    <li>🧾 Technische Fragen zu Transaktionen, Adressen, Fees usw.</li>
+    <li>🔒 Praktische Tipps für langfristige Sicherheit</li>
   </ul>
+  
+ <h2>Mein Hintergrund</h2>
+      <p>Ich erweitere mein Wissen seit 2019 um Bitcoin aus und bringe fundiertes Wissen und Erfahrung mit.</p>
+      <p>Ich berate unabhängig und ehrlich, Bitcoin only(!) – ohne Produkte zu verkaufen.</p>
+    </section>
+
 
   <h2>📬 Kontaktformular</h2>
   <form action="https://formspree.io/f/mgvkdgww" method="POST">
@@ -102,3 +161,4 @@
   </footer>
 </body>
 </html>
+
