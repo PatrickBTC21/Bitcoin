@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Selbstverwahrung Beratung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .cta {
+      background: #ff9900;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.8rem;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bitcoin Beratung & Selbstverwahrung</h1>
+    <p>Unabhängigkeit durch Wissen – sichere deine Bitcoins selbst!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Warum Selbstverwahrung?</h2>
+      <p>
+        Die Selbstverwahrung deiner Bitcoins bedeutet echte Kontrolle. Keine Abhängigkeit von Drittanbietern, kein Risiko durch Börsenpleiten oder Hacks.
+        Ich zeige dir, wie du deine Coins sicher und verständlich verwahrst – auch als Einsteiger.
+      </p>
+    </section>
+
+    <section>
+      <h2>Was ich anbiete</h2>
+      <ul>
+        <li>Einführung in Bitcoin und Selbstverwahrung</li>
+        <li>Hardware Wallet Beratung (z. B. Ledger, Trezor)</li>
+        <li>Unterstützung bei Einrichtung und Backup</li>
+        <li>Fragen zur Sicherheit, Recovery und langfristigen Aufbewahrung</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Kontakt aufnehmen</h2>
+      <p>Du hast Fragen oder willst starten? Schreib mir direkt:</p>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <input type="email" name="email" placeholder="Deine E-Mail" required>
+        <textarea name="message" placeholder="Deine Nachricht..." rows="5" required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+
+    <div style="text-align: center;">
+      <a href="#kontakt" class="cta">Jetzt Beratung anfragen</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Bitcoin Beratung – Alle Rechte vorbehalten
+  </footer>
+</body>
+</html>
