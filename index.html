@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Bitcoin Beratung zur sicheren Selbstverwahrung und umfassenden Antworten auf alle Fragen rund um Bitcoin." />
   <title>Bitcoin Beratung</title>
   <style>
     body {
@@ -20,54 +21,63 @@
     header {
       text-align: center;
       margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.25rem;
       color: #f7931a; /* Bitcoin Orange */
-      text-align: center;
     }
     header p {
       font-size: 1.25rem;
       color: #bbb;
-      text-align: center;
+      margin-top: 0;
     }
     main {
       flex-grow: 1;
       max-width: 600px;
       margin: 0 auto;
       background: #1e1e1e;
-      padding: 1.5rem 2rem;
+      padding: 2rem 2.5rem;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(247, 147, 26, 0.5);
     }
     section {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     h2 {
       color: #f7931a;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
       font-size: 1.5rem;
       border-bottom: 2px solid #f7931a;
-      padding-bottom: 0.25rem;
+      padding-bottom: 0.3rem;
     }
     ul {
       font-size: 1.1rem;
-      padding-left: 1.2rem;
+      padding-left: 1.4rem;
       color: #f0f0f0;
+      list-style: none;
     }
     ul li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding-left: 2.2rem;
+    }
+    ul li::before {
+      content: attr(data-icon);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.4rem;
+      line-height: 1;
+      color: #f7931a;
+      user-select: none;
     }
     p {
       font-size: 1.1rem;
-      margin: 0.25rem 0;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-      color: #666;
+      margin: 0.3rem 0;
     }
     a.email-link {
       color: #f7931a;
@@ -77,12 +87,34 @@
     a.email-link:hover {
       text-decoration: underline;
     }
+    .btn-contact {
+      display: inline-block;
+      background: #f7931a;
+      color: #121212;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+    .btn-contact:hover {
+      background: #d67f13;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto 1rem auto;
+    }
     @media (max-width: 480px) {
       body {
         padding: 1rem 0.5rem;
       }
       main {
-        padding: 1rem;
+        padding: 1.5rem 1rem;
         margin: 0 0.5rem;
       }
       header h1 {
@@ -100,32 +132,34 @@
 <body>
   <header>
     <h1>Bitcoin Beratung</h1>
-    <p>Sichere Selbstverwahrung & Unterstützung</p>
+    <p><strong>Sichere und verständliche Bitcoin-Beratung für Selbstverwahrung – einfach und vertrauenswürdig.</strong></p>
   </header>
   <main>
     <section>
       <h2>Du brauchst Hilfe?</h2>
       <ul>
-        <li>Wie funktioniert Bitcoin?</li>
-        <li>Wie lagere ich Bitcoin sicher selbst?</li>
-        <li>Welche Risiken gibt es bei der Selbstverwahrung?</li>
-        <li>Wie beantworte ich wichtige Fragen zur Sicherheit?</li>
-        <li>Wie kann ich Bitcoin richtig nutzen?</li>
-        <li>Gerne helfe ich dir weiter</li>
+        <li data-icon="🔍">Wie funktioniert Bitcoin?</li>
+        <li data-icon="🔒">Wie lagere ich Bitcoin sicher selbst?</li>
+        <li data-icon="⚠️">Welche Risiken gibt es bei der Selbstverwahrung?</li>
+        <li data-icon="❓">Wie beantworte ich wichtige Fragen zur Sicherheit?</li>
+        <li data-icon="🚀">Wie kann ich Bitcoin richtig nutzen?</li>
+        <li data-icon="🤝">Gerne helfe ich dir weiter</li>
       </ul>
     </section>
     <section>
       <h2>Mein Hintergrund</h2>
       <p>Ich kenne mich seit 2019 sehr gut mit Bitcoin aus und bringe fundiertes Wissen und Erfahrung mit.</p>
+      <p>Ich berate unabhängig und ehrlich – ohne Produkte zu verkaufen.</p>
     </section>
     <section>
       <h2>Kontakt</h2>
       <p>Schreib mir jederzeit:</p>
       <p><a class="email-link" href="mailto:patrick.hack@gmx.ch">patrick.hack@gmx.ch</a></p>
+      <a class="btn-contact" href="mailto:patrick.hack@gmx.ch">Jetzt Kontakt aufnehmen</a>
     </section>
   </main>
   <footer>
-    &copy; 2025 Bitcoin Beratung
+    <p>© 2025 Bitcoin Beratung | <a href="#" style="color:#f7931a; text-decoration:none;">Impressum</a></p>
   </footer>
 </body>
 </html>
